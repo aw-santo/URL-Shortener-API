@@ -14,6 +14,6 @@ app.get('/', (req, res) => {
 // makeid('c.com');
 console.log(dict);
 
-// app.listen(PORT, () => {
-//     console.log(`App is listening on ${PORT}.`);
-// });
+app.listen(PORT, () => {
+    console.log(`App is listening on ${PORT}.`);
+});
