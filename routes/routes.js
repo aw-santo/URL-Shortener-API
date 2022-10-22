@@ -11,10 +11,6 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:key", provideUrl);
-// router.post("/", (req, res) => {
-//     console.log(req.body);
-//     uniqueId(req, res);
-// });
 router.post("/", jsonParser, uniqueId);
 
 module.exports = router;

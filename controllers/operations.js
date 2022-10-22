@@ -40,7 +40,6 @@ exports.uniqueId = async (req, res) => {
             key: key,
             value: url
         });
-
         res.json({
             success: true,
             data: key

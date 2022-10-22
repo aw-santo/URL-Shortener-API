@@ -7,8 +7,9 @@ dotenv.config({ path: "./.env" });
 
 const PORT = process.env.PORT || 3333;
 const router = require("./routes/routes");
-app.use("/", router);
+
 app.use(cors());
+app.use("/", router);
 
 const connectDB = require("./db");
 connectDB();
