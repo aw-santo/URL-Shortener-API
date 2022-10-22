@@ -30,6 +30,10 @@ exports.uniqueId = async (req, res) => {
         const keys = await Mapper.find({}).select("key");
 
         const url = req.body.url;
+
+        if(!url) {
+            throw new Error("Request body required.")
+        }
         let key = await makeid(url, keys);
 
         await Mapper.create({

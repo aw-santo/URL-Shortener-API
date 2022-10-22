@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f9b001ca-01b3-4566-ae94-9406828ad90c/appservices/subscriptions/f9b001ca-01b3-4566-ae94-9406828ad90c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/nano-url",
+    "appService.deploySubpath": "."
+}
