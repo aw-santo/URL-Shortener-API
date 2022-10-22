@@ -5,7 +5,7 @@ exports.provideUrl = async (req, res) => {
     try {
         const key = req.params.key;
 
-        if (!key || key.length != 6) {
+        if (!key || key.length != 8) {
             throw new Error("Invalid Key.")
         }
 
@@ -65,7 +65,7 @@ async function makeid(_url, keys) {
     }
 
     const rand = () => {
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 8; i++) {
             result += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
     }
