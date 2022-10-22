@@ -4,7 +4,7 @@ const mapSchema = mongoose.Schema({
     key: {
         type: String,
         validate(value) {
-            if (value.length != 6) {
+            if (value.length != 8) {
                 throw new Error("Invalid id.");
             }
         }

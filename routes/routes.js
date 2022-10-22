@@ -5,9 +5,9 @@ const jsonParser = bodyParser.json();
 
 
 const { provideUrl, uniqueId } = require("../controllers/operations");
-const url = "https://localhost:3333";
+const url = "https://aw-santo.github.io/url-shortener/";
 router.get("/", (req, res) => {
-    res.status(300).send(`Redirect to ${url}`);
+    res.status(302).redirect(url);
 });
 
 router.get("/:key", provideUrl);
